@@ -8,13 +8,19 @@
 	<script src="js.js" defer></script>
 </head>
 <body>
+
+<!--get what size customer wants-->
+    <div>
     <label>size:</label>
     <select id="sizeSelect">
         <option>small</option>
         <option>medium</option>
         <option>large</option>
     </select>
+</div>
 
+<!--get what liquid should be used-->
+<div>
     <label>liquid:</label>
     <select id="liquidSelect">
         <option value="water">water</option>
@@ -22,14 +28,20 @@
         <option value="almond milk">almond milk</option>
         <option value="fruit juice">fruit juice</option>
     </select>
+</div>
 
+<!--get what fruit or veg combo customer wants-->
+<div>
     <label>fruit/veg base:</label>
     <select id="baseSelect">
         <option value="strawberry and banana">strawberry and banana</option>
         <option value="kale and cucumber">kale and cucumber</option>
         <option value="carrot and orange">carrot and orange</option>
     </select>
+</div>
 
+<!--check if they want other things to top it off-->
+<div>
     <label>extras:</label>
     <select id="extraSelect">
         <option value="none">none</option>
@@ -37,9 +49,13 @@
         <option value="vanilla">vanilla</option>
         <option value="protein powder">protein powder</option>
     </select>
+</div>
 
+<!--button to submit their order-->
+<div>
     <button id="submit">place order</button>
-
+</div>
+<!--output their order back to the user-->
     <p id="orderConfirm"></p>
 </body>
 </html>

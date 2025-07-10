@@ -20,4 +20,11 @@ function Smoothie(size, liquid, baseCombo, extras) {
     this.baseCombo = BaseCombo;
     this.extras = extras;
 
+    //if user has no extras just tell them smoothie otherwise edit the sentence to include the extra
+    if(extras === "none"){
+        document.getElementById("orderConfirm").textContent(`A ${this.size} sized made with ${this.liquid} and ${this.baseCombo} smoothie`)
+    }
+    else{
+        document.getElementById("orderConfirm").textContent(`A ${this.size} sized made with ${this.liquid} and ${this.baseCombo} smoothie with ${this.extras} to top it off`)
+    }
 }
