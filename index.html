@@ -9,34 +9,37 @@
 </head>
 <body>
     <label>size:</label>
-    <select>
+    <select id="sizeSelect">
         <option>small</option>
         <option>medium</option>
         <option>large</option>
     </select>
 
     <label>liquid:</label>
-    <select>
-        <option>water</option>
-        <option>milk</option>
-        <option>almond milk</option>
-        <option>fruit juice</option>
+    <select id="liquidSelect">
+        <option value="water">water</option>
+        <option value="milk">milk</option>
+        <option value="almond milk">almond milk</option>
+        <option value="fruit juice">fruit juice</option>
     </select>
 
     <label>fruit/veg base:</label>
-    <select>
-        <option>strawberry and banana</option>
-        <option>kale and cucumber</option>
-        <option>carrot and orange</option>
+    <select id="baseSelect">
+        <option value="strawberry and banana">strawberry and banana</option>
+        <option value="kale and cucumber">kale and cucumber</option>
+        <option value="carrot and orange">carrot and orange</option>
     </select>
 
     <label>extras:</label>
-    <select>
-        <option>protein powder</option>
-        <option>sugar</option>
-        <option>vanilla</option>
-        <option>none</option>
+    <select id="extraSelect">
+        <option value="none">none</option>
+        <option value="sugar">sugar</option>
+        <option value="vanilla">vanilla</option>
+        <option value="protein powder">protein powder</option>
     </select>
 
+    <button id="submit">place order</button>
+
+    <p id="orderConfirm"></p>
 </body>
 </html>
